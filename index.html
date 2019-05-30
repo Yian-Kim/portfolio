@@ -20,21 +20,45 @@
     <title>CHANMI KIM's Portfolio :: 공사중</title>
     <!-- ★ CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <!-- CHANMI KIM's Portfolio : index.html -->
-    <header>
-    <!--
-    ==================================================
-        ★ Logo (좌측 상단 위치)       
-    ==================================================        
-    -->
-    
-    <!--
-    ==================================================
-        ★ Navigation (메뉴바, 우측 상단 위치)        
-    ==================================================        
-    -->
+    <header id="header">
+        <div class="menu-bar-container ">
+            <!--
+            ==================================================
+                ★ Logo (좌측 상단 위치)       
+            ==================================================        
+            -->
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.jpg" class="logo">
+                    <span>&nbsp;&nbsp;CHANMI KIM</span>
+                </a>
+            </div>
+
+            <!--
+            ==================================================
+                ★ Navigation (메뉴바, 우측 상단 위치)
+                - About, Experience, Project, Skills, Education, Contact        
+            ==================================================   -->
+            <div id="navigation">
+                <nav id="nav-menu-container">
+                    <ul class="nav nav-menu">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Experience">Experience</a></li>
+                        <li><a href="#Project">Project</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+
+                    <!-- <a href="#" id="trigger">MENU</a> -->
+                </nav>
+            </div>
+        </div>
+
     </header>
 
     <!--
@@ -42,10 +66,23 @@
         ★ Banner (상단 정중앙 위치)        
     ==================================================
     -->
-    <section>
-
+    <section class="banner-section">
+        <div class="container">
+            <div class="align-items-center">
+                <div class="banner-content col-md-12">
+                    <h1 class="banner-title"><span>CHANMI KIM</span>'s<br>
+                        portfolio</h1>
+                    <div class="banner-subtitle">
+                        App/Web Developer
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="profile-border">
+        <img class="profile-img" src="img/logo.jpg" alt="">
+    </section>
     <!--
     ==================================================
         ★ Scroll Page (본문, 메뉴바 해당 컨텐츠)        
@@ -56,13 +93,61 @@
         section - Menu 1 : About
     --------------------------------------------------
     -->
-    <section>
-
+    <section class="about-section" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <!-- 자기소개 내용 -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officiis iure possimus delectus voluptatum! Perspiciatis sunt ipsam cumque quis facilis, repellat delectus ipsum corporis consequuntur. Asperiores sint enim tempore nihil distinctio doloremque voluptatibus porro possimus maiores sapiente dolore temporibus ullam, blanditiis fugit commodi iure dicta error neque expedita unde praesentium non laudantium! Totam natus sapiente illo repellendus temporibus pariatur eveniet fuga itaque ex. Exercitationem error debitis similique quo qui sapiente corporis explicabo doloribus optio aliquam sequi accusamus consequatur officia perferendis in, numquam molestias ut blanditiis itaque alias iure veniam beatae et! Provident doloremque quam expedita nulla qui veniam minus saepe!
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!--
     --------------------------------------------------
-        section - Menu 2 : Resume
+        section - Menu 2 : Experience
+    --------------------------------------------------
+    -->
+    <section class="experience-section section-gap" id="Experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div id="experience-timeline">
+                <div data-date="September 2015 – September 2016">
+                    <h3>Employer Name</h3>
+                    <h4>Job Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                </div>
+        
+                <div data-date="September 2015 – September 2016">
+                    <h3>Employer Name</h3>
+                    <h4>Job Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                </div>
+        
+                <div data-date="September 2015 – September 2016">
+                    <h3>Employer Name</h3>
+                    <h4>Job Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--
+    --------------------------------------------------
+        section - Menu 3 : Project 
     --------------------------------------------------
     -->
     <section>
@@ -71,25 +156,84 @@
     
     <!--
     --------------------------------------------------
-        section - Menu 3 : Portfolio
+        section - Menu 4 : Skills
+    --------------------------------------------------
+    -->
+    <section class="skills-section section-gap" id="Skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="font-white">
+                        <h2 class="section-title">Skills</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Front-end Development -->
+				<div class="col-lg-3 col-md-6">
+                    <div class="skills-part">
+                        <div class="skills-subtitle font-white">
+                            <h4><span>Front-end </span>Development</h4>
+                        </div>
+                        <img class="skills-icon" src="img/brand/html5.png" alt="html5-logo">
+                        <img class="skills-icon" src="img/brand/css3.png" alt="css3-logo">
+                        <img class="skills-icon" src="img/brand/javascript.png" alt="js-logo">
+                    </div>
+                </div>
+
+                <!-- Back-end Development -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skills-part">
+                        <div class="skills-subtitle font-black">
+                            <h4><span>Back-end </span>Development</h4>
+                        </div>
+                        <img class="skills-icon" src="img/brand/java.png" alt="java-logo">
+                        <img class="skills-icon" src="img/brand/c-programming.png" alt="c-logo">
+                        <img class="skills-icon" src="img/brand/c-plus-plus.png" alt="c++-logo">
+                        <img class="skills-icon" src="img/brand/c-sharp-programming.png" alt="c#-logo">
+                    </div>
+                </div>
+
+                <!-- Libraries & Frameworks -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skills-part">
+                        <div class="skills-subtitle font-white">
+                            <h4><span>Libraries</span>& Frameworks</h4>
+                        </div>
+                        <img class="skills-icon" src="img/brand/jquery.png" alt="jquery-icon"> 
+                        <img class="skills-icon" src="img/brand/bootstrap.png" alt="bootstrap-icon">
+                        <img class="skills-icon" src="img/brand/opencv2.png" alt="opencv-icon">
+                    </div>
+                </div>
+
+                <!-- Database & Others -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="skills-part">
+                        <div class="skills-subtitle font-black">
+                            <h4 class='black'><span>Database</span> & Others</h4>
+                        </div>
+                        <img class="skills-icon" src="img/brand/oracle-database.png" alt="oracle-db-logo">
+                        <img class="skills-icon" src="img/brand/mysql.png" alt="mysql-db-logo">
+                        <img class="skills-icon" src="img/brand/android.png" alt="android-logo">
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section> <!-- skills-section -->
+
+    <!--
+    --------------------------------------------------
+        section - Menu 5 : Education
     --------------------------------------------------
     -->
     <section>
 
     </section>
-    
-    <!--
-    --------------------------------------------------
-        section - Menu 4 : Blog
-    --------------------------------------------------
-    -->
-    <section>
 
-    </section>
-    
     <!--
     --------------------------------------------------
-        section - Menu 5 : Contact
+        section - Menu 6 : Contact
     --------------------------------------------------
     -->
     <section>
@@ -99,10 +243,17 @@
     <!--
     ==================================================
         ★ Footer (Social)        
-    ==================================================        
+    ==================================================      
     -->
-    <footer>
-
+    <!-- Copyright -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 copyright">
+                    Copyright &copy; 2019 All rights reserved
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!--
@@ -110,8 +261,6 @@
         ★ Script 삽입       
     ==================================================        
     -->
-    <script>
-    
-    </script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
