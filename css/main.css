@@ -17,51 +17,519 @@
 ==================================================        
 */
 
+.font-white{
+    color: white !important;
+}
+
+.font-black{
+    color: black !important;
+}
+
+/*
+--------------------------------------------------
+    header
+--------------------------------------------------
+*/
+
+.menu-bar-contatiner {
+    padding-top: 20px;  
+}
+
+#header {
+    padding: 0px 0px 20px 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+#header.header-scrolled {
+    position: fixed;
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    background: #fff;
+    transition: all 0.5s;
+}
+#header.header-scrolled #nav-menu-container {
+    margin-left: auto;
+}
+#header.header-scrolled.dark {
+    background: #222222;
+}
+
 /*
 ==================================================
     ★ Logo (좌측 상단 위치)       
 ==================================================        
 */
 
+.logo {
+    height: 35px;
+    border-radius: 50%;
+}
+
+#header #logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+    color: #000;
+    padding-left: 10px;
+    border-left: 4px solid #e45447;
+}
+
+#header #logo img {
+    padding: 0;
+    margin: 0;
+}
+
 /*
 ==================================================
     ★ Navigation (메뉴바, 우측 상단 위치)        
 ==================================================        
 */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+  text-align: left;
+}
+
+#nav-menu-container {
+    margin: 0;
+    margin-left: 250px;
+}
+
+.nav-menu a {
+    padding: 0px;
+    text-decoration: none;
+    display: inline-block;
+    color: #222222;
+    /* font-weight: 500; */
+    font-size: 16px;
+    text-transform: capitalize;
+    outline: none;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Hanna";
+}
+  
+  /* 상단바 hover 색상 */
+.nav-menu a.active,
+.nav-menu.white a {
+    color: #fff;
+}
+  
+.nav-menu > li {
+    margin-right: 50px;
+}
+.nav-menu > li:last-child {
+    margin-right: 0;
+}
+  
+.nav-menu ul {
+    margin: 33px 0 0 0;
+    padding: 10px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+}
+.nav-menu ul.dark {
+    background: #222222;
+}
+  
+.nav-menu ul li {
+    transition: 0.3s;
+}
+  
+.nav-menu ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+    font-weight: 400;
+}
+  
+.nav-menu ul li:hover > a {
+    color: #e45447;
+}
+  
+.nav-menu ul ul {
+    margin: 0;
+}
 
 /*
 ==================================================
     ★ Banner (상단 정중앙 위치)        
 ==================================================
 */
+.banner-section {
+    background: url(../img/banner-bg.jpg) center;
+    background-size: cover;
+    height: 550px !important;
+}
+
+.banner-content {
+    padding-top: 200px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family: "Hanna"; */
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 66px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 배너 박스 */
+.banner-content {
+    /* background: #90acd1; */
+    margin-top: 100px;
+    padding: 18px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.banner-content {
+    /* max-width: 390px; */
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+  }
+
+/* 배너 타이틀 색상 */
+.banner-title {
+    color: cornsilk;
+}
+
+/* 배너 서브타이틀 색상 */
+.banner-subtitle {
+    color: white;
+}
+
+.banner-img {
+    text-align: right;
+    position: relative;
+    left: 160px;
+}
+
+/* 프로필 테두리  */
+.profile-border {
+    border-radius: 50%;
+    width: 280px !important;
+    height: 280px !important;
+    background-color: white;
+    position: relative;
+    top: -135px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+/* 프로필 사진 */
+.profile-img {
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+ }
 
 /*
 ==================================================
     ★ Scroll Page (본문, 메뉴바 해당 컨텐츠)        
 ==================================================
 */
+.section-gap {
+    padding: 150px 0;
+}
 
+/* 섹션별 타이틀 */
+.section-title {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1024px) {
+    .section-title {
+      margin-bottom: 30px;
+    }
+}
+
+/* .section-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-transform: capitalize;
+    position: relative;
+    line-height: 44px;
+} */
+
+.section-title {
+    position:relative;
+    display:inline-block;
+    font-size:3em;
+    font-weight:400;
+    margin:0 0 30px 0
+}
+
+.section-title:after {
+    position:absolute;
+    content:'';
+    top:100%;
+    height:3px;
+    width:80px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    background:#3498db;
+}
 /*
 --------------------------------------------------
     section - Menu 1 : About
 --------------------------------------------------
 */
 
+.about-section {
+    /* border: 1px solid black; */
+}
+
 /*
 --------------------------------------------------
-    section - Menu 2 : Resume
+    section - Menu 2 : Experience
+--------------------------------------------------
+*/
+
+.experience-container {
+    background:#f2f2f5
+}
+
+
+
+#experience{
+    padding:50px 15px;
+    text-align:center;
+    border-bottom:1px solid #dcd9d9
+}
+    
+#experience h2{
+    color:#374054
+}
+
+#experience-timeline>div {
+    background:#fff;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #dcd9d9;
+}
+
+#experience-timeline>div h3{
+    font-size:1.5em;
+    font-weight:300;
+    color:#374054;
+    display:inline-block;
+    margin:0;
+}
+#experience-timeline>div h4{
+    font-size:1.2em;
+    font-weight:300;
+    color:#7e8890;
+    margin:0 0 15px 0;
+}
+#experience-timeline>div p{
+    color:#74808a; font-size:0.9em;
+    margin:0;
+}
+#experience-timeline:before, #experience-timeline:after{
+    content:none
+}
+
+#experience-timeline{
+    margin:30px auto 0 auto;
+    position:relative;max-width:1000px
+}
+#experience-timeline:before{
+    position:absolute;
+    content:'';
+    top:0;
+    bottom:0;
+    left:303px;
+    right:auto;
+    height:100%;
+    width:3px;
+    background:#3498db;
+    z-index:0
+}
+    
+#experience-timeline:after{
+    position:absolute;
+    content:'';
+    width:3px;
+    height:40px;
+    background:#3498db;
+    background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));top:100%;left:303px}
+
+@media only screen and (max-width: 750px){
+    #Experience-timeline:before,#Experience-timeline:after{left:23px}
+}
+
+/*
+--------------------------------------------------
+    section - Menu 3 : Project
 --------------------------------------------------
 */
 
 /*
 --------------------------------------------------
-    section - Menu 3 : Portfolio
+    section - Menu 4 : Skills
 --------------------------------------------------
 */
 
+/* 배경 이미지 */
+.skills-section {
+    background: url(../img/skill-bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.skills-section .container .row > h2{
+    color: black;
+}
+
+/* 각 파트 상자 색상 */
+.skills-section .col-lg-3.col-md-6:nth-child(1) .skills-part {
+    background: rgba(0, 0, 0, 0.5);
+}
+.skills-section .col-lg-3.col-md-6:nth-child(2) .skills-part {
+    background: rgba(255, 255, 255, 0.5);
+}
+.skills-section .col-lg-3.col-md-6:nth-child(3) .skills-part {
+    background: rgba(0, 0, 0, 0.5);
+}
+.skills-section .col-lg-3.col-md-6:nth-child(4) .skills-part {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.skills-part {
+    /* color: #fff; */
+    padding: 60px 30px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1199px) {
+    .skills-part {
+      padding: 30px 15px;
+    }
+}
+@media (max-width: 991px) {
+    .skills-part {
+      margin-bottom: 30px;
+      padding: 60px 30px;
+    }
+}
+@media (max-width: 576px) {
+    .skills-part {
+      text-align: center;
+    }
+}
+
+/* 각 파트별 서브 타이틀 영역*/
+.skills-part .skills-subtitle {
+    font-size: 36px;
+    /* color: #fff; */
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+/* 각 파트별 서브 타이틀 */
+.skills-part h4 {
+    /* color: #fff; */
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skills-part h4 span {
+    display: block;
+}
+@media (max-width: 767px) {
+    .skills-part h4 span {
+      display: inline-block;
+    }
+} 
+
+.skills-part:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+/* 아이콘 */
+.skills-icon {
+    height: 65px;
+    margin: 10px;
+}
+
 /*
 --------------------------------------------------
-    section - Menu 4 : Blog
+    section - Menu 5 : Education
 --------------------------------------------------
 */
 
@@ -76,3 +544,23 @@
     ★ Footer (Social)        
 ==================================================        
 */
+
+/* 맨 아래 여백 */
+.footer-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px auto;
+}
+
+/* 저작권 표시 */
+.footer-section .container .copyright{
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 300px;
+    margin: 0px auto;
+}
+
+/*
+etc.
+*/
+
