@@ -31,8 +31,10 @@
 --------------------------------------------------
 */
 
-.menu-bar-contatiner {
+#menu-bar-container {
+    width:1200px;
     padding-top: 20px;  
+    border: 1px solid black;
 }
 
 #header {
@@ -51,9 +53,7 @@
     background: #fff;
     transition: all 0.5s;
 }
-#header.header-scrolled #nav-menu-container {
-    margin-left: auto;
-}
+/* #header.header-scrolled  */
 #header.header-scrolled.dark {
     background: #222222;
 }
@@ -64,18 +64,27 @@
 ==================================================        
 */
 
-.logo {
+/* header 영역 로고 사진(왼쪽 상단) */
+#logo-img-header {
     height: 35px;
     border-radius: 50%;
+    float: left;
+    left: 10%;
+    margin-top: 2px auto;
+
+    /* 테스트 영역 */
+    border: 1px solid black;
 }
 
-#header #logo h1 {
-    font-size: 34px;
-    margin: 0;
+/* header 영역 로고 CHANMI KIM */
+#logo-area a span {
+    font-size: 15px;
+    margin-left: 10px;
     padding: 0;
     line-height: 1;
     font-weight: 700;
     letter-spacing: 3px;
+    border: 1px solid black;
 }
 
 #header #logo h1 a,
@@ -95,6 +104,20 @@
     ★ Navigation (메뉴바, 우측 상단 위치)        
 ==================================================        
 */
+
+#navigation-area{
+    width: 700px;
+    float: right;
+    right: 10%; 
+    margin: 0px;
+}
+
+#nav-menu-container {
+    width: 600px;
+    /* margin-left: auto; */
+    border: 1px solid black;
+}
+
 .nav-menu,
 .nav-menu * {
   margin: 0;
@@ -131,8 +154,13 @@
 }
 
 .nav-menu ul li {
-  min-width: 180px;
-  text-align: left;
+    min-width: 180px;
+    text-align: left;
+}
+
+/* 네비게이션 우측 정렬 */
+.navigation {
+
 }
 
 #nav-menu-container {
@@ -418,7 +446,7 @@
     background:linear-gradient(to bottom, #3498db, rgba(52,152,219,0));top:100%;left:303px}
 
 @media only screen and (max-width: 750px){
-    #Experience-timeline:before,#Experience-timeline:after{left:23px}
+    #experience-timeline:before,#experience-timeline:after{left:23px}
 }
 
 /*
@@ -427,6 +455,117 @@
 --------------------------------------------------
 */
 
+.project-section {
+    /* background-image: url("../img/portfolio-bg.jpg"); // 배경 이미지 부분 */
+    /* background-color: black; */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+  @media (max-width: 1024px) {
+    .project-section .row.mb-80 {
+      margin-bottom: 30px;
+    }
+  }
+  .project-section .section-title {
+    margin-bottom: 0;
+  }
+
+/* 생략 */
+
+.project-section .filters-content .show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 350ms;
+}
+.project-section .filters-content .hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 350ms;
+}
+.project-section .filters-content img {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.linkto{
+    color: white;
+    font-size: 16px;
+    text-decoration-line: none;
+    }
+    
+.overlay {
+    position: absolute;
+    /* width: 520px;
+    height: 380px; */
+    width: 95%;
+    height: 100%;
+}
+
+/* 프로젝트 부분 */
+.single-project {
+    border-radius: 5px;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0 2px;
+}
+
+/* 마우스를 올리면 변하는 영역 */
+.single-project .thumb .overlay-bg {
+    border: 1px solid black;
+    /* background: rgb(32, 46, 109); */
+    background: linear-gradient(5deg, #d474b0, #64c6df);
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-project .thumb .image {
+    opacity: 1;
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    width: 100%;
+    height: 380px; /* 570 x 380 */
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+.single-project .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-project .middle h4 {
+    font-size: 21px;
+    color: #fff;
+}
+.single-project .middle .cat {
+    font-size: 15px;
+    color: #fff;
+}
+.single-project:hover .thumb .overlay-bg {
+    opacity: .95;
+}
+.single-project:hover .middle {
+    opacity: 1;
+}
+
+  
 /*
 --------------------------------------------------
     section - Menu 4 : Skills
@@ -532,6 +671,72 @@
     section - Menu 5 : Education
 --------------------------------------------------
 */
+
+#education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center
+}
+
+#Education .container h2 {
+    /* color: #374054; */
+    margin-bottom: 50px;
+    
+    /* 테스트 영역 */
+    color: red;
+    text-align: center; /* 질문 */
+    border: 1px solid black;
+    width: 100%;
+    /* cursor: url("angel.cur") */
+}
+
+
+
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #dcd9d9;
+    text-align: left
+}
+
+.education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #374054
+}
+
+.education-block span {
+    color: #74808a;
+    float: right
+}
+
+.education-block h4 {
+    font-size: 16px;
+    color: #74808a;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0
+}
+
+.education-block p,
+.education-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em
+}
+
+.education-block ul {
+    padding: 0 0 0 15px
+}
+
+/* 생략 */
+
+.education-block h3,
+.education-block span {
+    float: none
+}
 
 /*
 --------------------------------------------------
