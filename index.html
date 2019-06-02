@@ -24,40 +24,43 @@
 </head>
 <body>
     <!-- CHANMI KIM's Portfolio : index.html -->
-    <header id="header">
-        <div class="menu-bar-container ">
-            <!--
-            ==================================================
-                ★ Logo (좌측 상단 위치)       
-            ==================================================        
-            -->
-            <div id="logo">
-                <a href="index.html">
-                    <img src="img/logo.jpg" class="logo">
-                    <span>&nbsp;&nbsp;CHANMI KIM</span>
-                </a>
-            </div>
+    <header id="header" class="header-scrolled">
+        <div id="menu-bar-container" class="container">
+            <div class="row align-items-center d-flex">
+                <!--
+                ==================================================
+                    ★ Logo (좌측 상단 위치)       
+                ==================================================        
+                -->
+                <div id="logo-area">
+                    <a href="index.html">
+                        <img src="img/logo.jpg" id="logo-img-header" class="logo">
+                        <span id="name-header">CHANMI KIM</span>
+                    </a>
+                </div>
 
-            <!--
-            ==================================================
-                ★ Navigation (메뉴바, 우측 상단 위치)
-                - About, Experience, Project, Skills, Education, Contact        
-            ==================================================   -->
-            <div id="navigation">
-                <nav id="nav-menu-container">
-                    <ul class="nav nav-menu">
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Experience">Experience</a></li>
-                        <li><a href="#Project">Project</a></li>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#Education">Education</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
+                <!--
+                ============================================================
+                    ★ Navigation (메뉴바, 우측 상단 위치)
+                    - About, Experience, Project, Skills, Education, Contact        
+                ============================================================   
+                -->
+                <!-- <div id="navigation-area"> -->
+                    <nav id="nav-menu-container" class="nav">
+                        <ul class="nav nav-menu">
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Experience">Experience</a></li>
+                            <li><a href="#Project">Project</a></li>
+                            <li><a href="#Skills">Skills</a></li>
+                            <li><a href="#Education">Education</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </ul>
 
-                    <!-- <a href="#" id="trigger">MENU</a> -->
-                </nav>
-            </div>
-        </div>
+                        <!-- <a href="#" id="trigger">MENU</a> -->
+                    </nav>
+                <!-- </div> End of navigation-area -->
+            </div> <!-- End of menu-bar-container -->
+        </div> <!-- header -->
 
     </header>
 
@@ -150,8 +153,92 @@
         section - Menu 3 : Project 
     --------------------------------------------------
     -->
-    <section>
+    <section class="project-section section-gap" id="Project">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
 
+                <div class="filters-content">
+                    <div class="row grid">
+                        <!-- 참여한 프로젝트 목록 -->
+        
+                        <!-- project-4 -->
+                        <div class="single-project col-lg-6 col-md-6 col-sm-12">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <div class="overlay overlay-bg"></div>
+                                    <img class="image" src="img/project/project4.png" alt="">
+                                </div>
+                                <div class="middle">
+                                    <h4>CAFETORI</h4>
+                                    <div class="cat">Web Client Project</div><br>
+                                    <a class="linkto btn btn-outline-light" href=""
+                                        target="_blank">Demo Video</a><br><br>
+                                    <a class="linkto btn btn-outline-light" target="_blank" 			href="https://github.com/Chanmi-Kim/CAFETORI">GitHub Page</i></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- project-3 -->
+                        <div class="single-project col-lg-6 col-md-6 col-sm-12">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <div class="overlay overlay-bg"></div>
+                                    <img class="image" src="img/project/project4.png" alt="">
+                                </div>
+                                <div class="middle">
+                                    <h4>SEDU Center</h4>
+                                    <div class="cat">JDBC Project</div><br>
+                                    <a class="linkto btn btn-outline-light" target="_blank"
+                                        href="">Demo Video</a><br><br>
+                                    <a class="linkto btn btn-outline-light" target="_blank"
+                                        href="https://github.com/Chanmi-Kim/SEDU-Center">GitHub Page</i></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- project-2 -->
+                        <div class="single-project col-lg-6 col-md-6 col-sm-12">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <div class="overlay overlay-bg"></div>
+                                    <img class="image" src="img/project/project2.png" alt="">
+                                </div>
+                                <div class="middle">
+                                    <h4>Jeju Double Dragon Tour</h4>
+                                    <div class="cat">Java Console Project</div><br>
+                                    <a class="linkto btn btn-outline-light" href=""
+                                        target="_blank">Demo Video</a><br><br>
+                                    <a class="linkto btn btn-outline-light" href="https://github.com/Chanmi-Kim/Jeju-Double-Dragon-Tour"
+                                        target="_blank">GitHub Page</i></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- project-1 -->
+                        <div class="single-project col-lg-6 col-md-6 col-sm-12">
+                            <div class="relative">
+                                <div class="thumb">
+                                    <div class="overlay overlay-bg"></div>
+                                    <img class="image" src="img/project/project1.png" alt="">
+                                </div>
+                                <div class="middle">
+                                    <h4>Smart Multi Tab with Wi-Fi</h4>
+                                    <div class="cat">Android & Arduino Project</div><br>
+                                    <a class="linkto btn btn-outline-light" target="_blank"
+                                        href="">Demo Video</a><br><br>
+                                    <a class="linkto btn btn-outline-light" target="_blank"
+                                        href="https://github.com/Chanmi-Kim/Smart-Multi-Tab-with-Wi-Fi">GitHub Page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     
     <!--
@@ -227,8 +314,27 @@
         section - Menu 5 : Education
     --------------------------------------------------
     -->
-    <section>
+    <section class="education-section section-gap" id="Education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                    <div class="education-block">
+                        <h3>University of Ottawa</h3>
+                        <span class="education-date">Sept 2016 - Sept 2017</span>
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                    </div>
 
+                    <div class="education-block">
+                        <h3>University of Ottawa</h3>
+                        <span class="education-date">Sept 2016 - Sept 2017</span>
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                    </div>
+            </div>
     </section>
 
     <!--
