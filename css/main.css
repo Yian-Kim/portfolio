@@ -476,10 +476,14 @@
     .project-section .row.mb-80 {
       margin-bottom: 30px;
     }
-  }
-  .project-section .section-title {
-    margin-bottom: 0;
-  }
+}
+.project-section .section-title {
+    margin-bottom: 50;
+}
+
+.project-section .section-title:after {
+    margin-top: 8px;
+}
 
 /* 생략 */
 
@@ -754,6 +758,62 @@
 --------------------------------------------------
 */
 
+/* Contact 큰 상자 색상 */
+.contact-area {
+    /* background: linear-gradient(45deg, #ffd3d3, #bba8ff, navy); */
+    /* background: rgb(32, 46, 109); */
+    background: #bba8ff;
+  }
+  @media (max-width: 1024px) {
+    .contact-area .row.mt-80 {
+      margin-top: 40px;
+    }
+  }
+
+#Contact .container h2 {
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+/* @media (max-width: 1024px) {
+    .contact-area .contact-title h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 576px) {
+    .contact-area .contact-title h2 {
+      font-size: 30px;
+    }
+  } */
+
+  /* Contact 영역 아래 공간*/
+.contact-title {
+    padding-bottom: 15px;
+}
+.box-1 {
+    text-align: right;
+}
+  @media (max-width: 991px) {
+    .box-1 {
+      text-align: left;
+    }
+}
+.box-2 {
+    text-align: left;
+}
+.contact-box .font-style {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 30px 30px;
+    color: #fff;
+}
+.font-style2 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
 /*
 ==================================================
     ★ Footer (Social)        
@@ -761,14 +821,58 @@
 */
 
 /* 맨 아래 여백 */
-.footer-section {
+.footer-area {
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 100px auto;
 }
+@media (max-width: 1024px) {
+        .footer-area {
+          padding: 60px 0;
+    }
+}
+
+/* 소셜미디어 영역 */
+.footer-area .footer-social {
+    text-align: center;
+    margin: 25px 0px 50px;
+  }
+  @media (max-width: 1024px) {
+    .footer-area .footer-social {
+      margin: 15px 0px 30px;
+    }
+}
+
+.footer-area .footer-social a {
+    padding: 0 20px;
+    color : #BBBBBB;
+}
+
+.footer-area .footer-social a:hover{
+    color: tomato;
+}
+
+.footer-area .footer-social a i {
+    color: #cccccc;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+  @media (max-width: 576px) {
+    .footer-area .footer-social a i {
+      font-size: 25px;
+    }
+}
+
+.footer-area .footer-social a i:hover {
+    color: #e45447 !important;
+}
+
+
 
 /* 저작권 표시 */
-.footer-section .container .copyright{
+.footer-area .container .copyright{
     text-align: center;
     /* border: 1px solid black; */
     width: 300px;
