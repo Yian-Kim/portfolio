@@ -2,8 +2,8 @@
 
     작성자 : CHANMI KIM
     파일명 : index.html
-    작성일자 : 2019.06.12.
-    최근 수정날짜 : 2019.05.30.
+    작성일자 : 2019.05.30.
+    최근 수정날짜 : 2019.06.15.
     프로그램명 : CHANMI KIM's Portfolio
     상세설명 : 포트폴리오 사이트입니다.
 
@@ -23,6 +23,20 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/fontawesome.min.css"> -->
 
+    <!-- ★ Script -->
+    <script src="js/bootstrap.js"></script>
+    <script defer src="fontawesome-free-5.9.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=9cf6ff993e4d8f63debde2985a96a5fe"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new daum.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표 : 위도, 경도
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
 </head>
 <body>
     <!-- CHANMI KIM's Portfolio : index.html -->
@@ -123,18 +137,22 @@
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div id="experience-timeline">
-                <div id="map webzen" style="width:40%;height:250px;"></div>
-                <div data-date="September 2015 – September 2016" id="experience-description">
-                    <h3>Employer Name</h3>
-                    <h4>Job Title</h4>
+
+                <!-- Company2 -->
+                <div id="map" style="width:500px;height:400px;"></div>
+                <div data-date="2017.07.17. – 2018.07.16." id="experience-description">
+                    <h3>웹젠</h3>
+                    <h4>사업PM</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                     </p>
                 </div>
-                <div id="map beyond-marketing-group" style="width:40%;height:250px;"></div>
-                <div data-date="September 2015 – September 2016">
-                    <h3>Employer Name</h3>
-                    <h4>Job Title</h4>
+
+                <!-- Company1-->
+                <!-- <div id="map" style="width:500px;height:400px;"></div> -->
+                <div data-date="2016.06.27. – 2016.08.19.">
+                    <h3>비욘드마케팅그룹</h3>
+                    <h4>광고기획(AE)</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                     </p>
@@ -513,12 +531,5 @@
         </div>
     </footer>
 
-    <!--
-    ==================================================
-        ★ Script 삽입       
-    ==================================================        
-    -->
-    <script src="js/bootstrap.js"></script>
-    <script defer src="fontawesome-free-5.9.0-web/js/all.min.js"></script>
 </body>
 </html>
