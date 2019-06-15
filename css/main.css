@@ -3,7 +3,7 @@
     작성자 : CHANMI KIM
     파일명 : main.css
     작성일자 : 2019.05.30.
-    최근 수정날짜 : 2019.05.30.
+    최근 수정날짜 : 2019.06.15.
     프로그램명 : CHANMI KIM's Portfolio
     상세설명 : 포트폴리오 사이트에 들어가는 CSS 입니다.
             index.html 파일에 들어가는 css를 다루고 있습니다.
@@ -125,7 +125,7 @@
 }
 
 #nav-menu-container {
-    width: 600px;
+    width: 800px;
     /* margin-left: auto; */
     /* border: 1px solid black; */
     /* margin-left: 350px; */
@@ -182,7 +182,7 @@
     text-decoration: none;
     display: inline-block;
     color: #222222;
-    /* font-weight: 500; */
+    font-weight: bold;
     font-size: 16px;
     text-transform: capitalize;
     outline: none;
@@ -245,6 +245,7 @@
     background: url(../img/banner-bg.jpg) center;
     background-size: cover;
     height: 550px !important;
+    position: relative;
 }
 
 .banner-content {
@@ -290,6 +291,7 @@
 /* 배너 서브타이틀 색상 */
 .banner-subtitle {
     color: white;
+    font-weight: bold;
 }
 
 .banner-img {
@@ -309,6 +311,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    /* margin-bottom: 100px; */
  }
 
 /* 프로필 사진 */
@@ -328,7 +331,7 @@
 ==================================================
 */
 .section-gap {
-    padding: 150px 0;
+    padding: 150px 0px !important;
 }
 
 /* 섹션별 타이틀 */
@@ -377,6 +380,7 @@
 */
 
 .about-section {
+    padding-top: 90px;
     /* border: 1px solid black; */
 }
 
@@ -390,32 +394,45 @@
     background:#f2f2f5
 }
 
+#experience-timeline{
+    margin:30px auto 0 auto;
+    position:relative;
+    max-width:900px;
+}
 
-
-#experience{
+#Experience{
     padding:50px 15px;
-    text-align:center;
-    border-bottom:1px solid #dcd9d9
+    /* border-bottom:1px solid #dcd9d9; */
 }
     
-#experience h2{
+#Experience h2{
     color:#374054
 }
 
 #experience-timeline>div {
     background:#fff;
-    padding:10px;
-    margin-bottom:10px;
-    border:1px solid #dcd9d9;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dcd9d9;
+    border-radius: 5px;
 }
 
-#experience-timeline>div h3{
+#experience-timeline experience-date h3{
     font-size:1.5em;
     font-weight:300;
     color:#374054;
     display:inline-block;
     margin:0;
 }
+
+#experience-timeline>div span {
+    color: #74808a;
+    float: right !important;
+}
+
 #experience-timeline>div h4{
     font-size:1.2em;
     font-weight:300;
@@ -427,13 +444,9 @@
     margin:0;
 }
 #experience-timeline:before, #experience-timeline:after{
-    content:none
+    content:none;
 }
 
-#experience-timeline{
-    margin:30px auto 0 auto;
-    position:relative;max-width:1000px
-}
 /* #experience-timeline:before{
     position:absolute;
     content:'';
@@ -478,7 +491,7 @@
     }
 }
 .project-section .section-title {
-    margin-bottom: 50;
+    margin-bottom: 50px;
 }
 
 .project-section .section-title:after {
