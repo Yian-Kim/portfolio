@@ -80,6 +80,11 @@
 #logo-area {
     padding-left: 20px;
 }
+@media (max-width: 673px) {
+    #logo-area {
+      padding-left: 10px;
+    }
+}
 
 /* header 영역 로고 CHANMI KIM */
 #logo-area a span {
@@ -94,20 +99,27 @@
     margin-top: 10px;
 }
 
-#header #logo h1 a,
-#header #logo h1 a:hover {
-    color: #000;
-    padding-left: 10px;
-    border-left: 4px solid #e45447;
-}
-
-#header #logo img {
+#logo-img-header {
     padding: 0;
     margin: 0;
 }
 
+#name-header {
+    color: cornflowerblue;
+}
+
 #name-header:hover {
     color: tomato;
+}
+
+@media (max-width: 768px) {
+    #header #logo a {
+      font-size: 28px;
+    }
+  
+    #header #logo img {
+      max-height: 40px;
+    }
 }
 
 /*
@@ -236,68 +248,200 @@
     margin: 0;
 }
 
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    z-index: 999;
+    top: 60px;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+  }
+  @media (max-width: 800px) {
+    #mobile-nav-toggle {
+      top: 26px;
+    }
+  }
+  
+  #mobile-nav-toggle i {
+    color: #e45447;
+    font-weight: 900;
+  }
+  
+  @media (max-width: 800px) {
+    #mobile-nav-toggle {
+      display: inline;
+    }
+  
+    #nav-menu-container {
+      display: none;
+    }
+  }
+  /* Mobile Nav Styling */
+  #mobile-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.8);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    transition: 0.4s;
+  }
+  
+  #mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #mobile-nav ul li {
+    position: relative;
+  }
+  
+  #mobile-nav ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 400;
+  }
+  
+  #mobile-nav ul li a:hover {
+    color: #fff;
+  }
+  
+  #mobile-nav ul li li {
+    padding-left: 30px;
+  }
+  
+  #mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #mobile-nav ul .menu-has-children i.fa-chevron-up {
+    color: #e45447;
+  }
+  
+  #mobile-nav ul .menu-has-children li a {
+    text-transform: none;
+  }
+  
+  #mobile-nav ul .menu-item-active {
+    color: #e45447;
+  }
+  
+  #mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+
+  /* Mobile Nav body classes */
+body.mobile-nav-active {
+    overflow: hidden;
+  }
+  
+  body.mobile-nav-active #mobile-nav {
+    left: 0;
+  }
+  
+  body.mobile-nav-active #mobile-nav-toggle {
+    color: #fff;
+  }
 /*
 ==================================================
     ★ Banner (상단 정중앙 위치)        
 ==================================================
 */
+
+
 .banner-section {
-    background: url(../img/banner-bg.jpg) center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url(../img/banner-bg.jpg) center;
     background-size: cover;
     height: 550px !important;
     position: relative;
 }
-
-.banner-content {
-    padding-top: 200px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    /* font-family: "Hanna"; */
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 66px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+@media (max-width: 576px) {
+    .banner-section {
+        height: 400px !important;
+    }
 }
 
 /* 배너 박스 */
 .banner-content {
     /* background: #90acd1; */
+    padding-top: 200px;
+    text-align: center;
     margin-top: 100px;
     padding: 18px;
     display: inline-block;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 8px;
     position: relative;
+
+    /* border: 1px solid black; */
 }
-
-.banner-content {
-    /* max-width: 390px; */
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 42px;
-  }
-
+@media (max-width: 673px) {
+    .banner-content {
+        height: 170px;
+    }
+}
 /* 배너 타이틀 색상 */
 .banner-title {
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: cornsilk;
-}
-
-/* 배너 서브타이틀 색상 */
-.banner-subtitle {
-    color: white;
+    font-size: 60px;
     font-weight: bold;
+    /* line-height: 66px; */
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
 }
 
-.banner-img {
-    text-align: right;
-    position: relative;
-    left: 160px;
+/* 배너 서브타이틀 */
+.banner-subtitle {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 42px;
+}
+@media (max-width: 673px) {
+    .banner-title {
+        margin-top: auto;
+        font-size: 40px;
+    }
+    .banner-subtitle {
+        line-height: 30px;
+        font-size: 22px;
+    }
+}
+
+.banner-title,
+.banner-subtitle { 
+    text-shadow: 2px 2px 6px gray; 
 }
 
 /* 프로필 테두리  */
@@ -314,6 +458,19 @@
     /* margin-bottom: 100px; */
  }
 
+@media (max-width: 576px) {
+    .profile-border {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+@media (max-width: 325px) {
+    .profile-border {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
+
 /* 프로필 사진 */
 .profile-img {
     border-radius: 50%;
@@ -325,6 +482,20 @@
     margin-top: 10px;
  }
 
+ @media (max-width: 576px) {
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+@media (max-width: 325px) {
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
 /*
 ==================================================
     ★ Scroll Page (본문, 메뉴바 해당 컨텐츠)        
@@ -333,26 +504,22 @@
 .section-gap {
     padding: 150px 0px !important;
 }
+@media (max-width: 673px) {
+    .section-gap {
+      padding: 50px 0px !important;
+    }
+}
 
 /* 섹션별 타이틀 */
 .section-title {
     margin-bottom: 80px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 673px) {
     .section-title {
       margin-bottom: 30px;
     }
 }
-
-/* .section-title h2 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 70px;
-    text-transform: capitalize;
-    position: relative;
-    line-height: 44px;
-} */
 
 .section-title {
     position:relative;
@@ -360,6 +527,11 @@
     font-size:3em;
     font-weight:400;
     margin:0 0 30px 0
+}
+@media (max-width: 1024px) {
+    .section-title {
+      font-size: 30px;
+    }
 }
 
 .section-title:after {
@@ -373,6 +545,13 @@
     margin:0 auto;
     background:#3498db;
 }
+
+@media (max-width: 1024px) {
+    .section-title:after {
+      bottom: -11px;
+    }
+}
+
 /*
 --------------------------------------------------
     section - Menu 1 : About
@@ -380,8 +559,17 @@
 */
 
 .about-section {
-    padding-top: 90px;
+    padding-top: 120px;
+    padding-bottom: 150px;
     /* border: 1px solid black; */
+}
+@media (max-width: 1024px){
+    .about-section {
+        padding-top: 0px;
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
 }
 
 /*
@@ -390,7 +578,7 @@
 --------------------------------------------------
 */
 
-.experience-container {
+.experience-section {
     background:#f2f2f5
 }
 
@@ -404,6 +592,13 @@
     padding:50px 15px;
     /* border-bottom:1px solid #dcd9d9; */
 }
+@media (max-width: 1024px){
+    .experience-section {
+        padding: 0px;
+        margin-top: 0px;
+    }
+}
+
     
 #Experience h2{
     color:#374054
