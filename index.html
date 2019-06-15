@@ -3,7 +3,7 @@
     작성자 : CHANMI KIM
     파일명 : index.html
     작성일자 : 2019.05.30.
-    최근 수정날짜 : 2019.06.15.
+    최근 수정날짜 : 2019.06.16.
     프로그램명 : CHANMI KIM's Portfolio
     상세설명 : 포트폴리오 사이트입니다.
 
@@ -24,12 +24,12 @@
     <!-- <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/fontawesome.min.css"> -->
 
     <!-- ★ Script -->
-    <script src="js/bootstrap.js"></script>
     <script defer src="fontawesome-free-5.9.0-web/js/all.min.js"></script>
-    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=9cf6ff993e4d8f63debde2985a96a5fe"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ett7kesgbe"></script>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
     <!-- CHANMI KIM's Portfolio : index.html -->
     <header id="header" class="header-scrolled">
         <div id="menu-bar-container" class="container">
@@ -110,9 +110,16 @@
                     <h2 class="section-title">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
-                        <!-- 자기소개 내용 -->
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officiis iure possimus delectus voluptatum! Perspiciatis sunt ipsam cumque quis facilis, repellat delectus ipsum corporis consequuntur. Asperiores sint enim tempore nihil distinctio doloremque voluptatibus porro possimus maiores sapiente dolore temporibus ullam, blanditiis fugit commodi iure dicta error neque expedita unde praesentium non laudantium! Totam natus sapiente illo repellendus temporibus pariatur eveniet fuga itaque ex. Exercitationem error debitis similique quo qui sapiente corporis explicabo doloribus optio aliquam sequi accusamus consequatur officia perferendis in, numquam molestias ut blanditiis itaque alias iure veniam beatae et! Provident doloremque quam expedita nulla qui veniam minus saepe!
+                    <!-- 자기소개 내용 -->
+                    <span>
+                        <h4>도전하는 것을 즐기고, 끊임없이 성장을 추구하는, 호기심대마왕</h4>
+                    </span>
+                    <br>
+                    <p class="text-left">
+                        이제 처음 개발자라는 길로 한 발을 내딛고자 하는 주니어 개발자 김찬미입니다. 
+                        개발자로의 길을 뒤늦게 결심하여 PM일을 그만두고 주니어 개발자가 되기 위해 준비하고 있습니다. 
+                        주로 사용하는 기술 스택은 Java, HTML, CSS, Javascript, JSP, Spring이며 아름다운 클린코드를 추구합니다.
+                        참여한 프로젝트와 새로운 기술 공부에 대한 내용은 GitHub에 꾸준하게 커밋하고 있습니다.
                     </p>
                 </div>
             </div>
@@ -131,7 +138,7 @@
 
                 <!-- Company2 -->
                 <div class="map col-md-4" style="width: 400px;">
-                    <div id="map" style="width: 40%;height:250px;"></div>
+                    <div id="map" style="width: 40%; height:250px;"></div>
                 </div>
                 <div class="col-md-6">
                     <div id="experience-description">
@@ -139,7 +146,13 @@
                         <span class="experience-date">2017.07.17 - 2018.07.16.</span>
                         <h4>사업PM - 사원</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            ◆ 주요업무 : <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;- 모바일 앱 마켓 관리 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;- 프로젝트 관리(사업, 운영, 서비스) <br><Br>
+                            ◆ 담당 프로젝트 : <Br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;- 뮤 오리진 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;- PoolTime <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;- SOGWC
                         </p>
                     </div>
                  </div>
@@ -153,7 +166,14 @@
                     <span class="experience-date">2016.06.27 - 2016.08.19.</span>
                     <h4>광고기획(AE) - 인턴</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        ◆ 주요업무 : <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- 제안서 작성 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- 트렌드 리포트 작성 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- 아이디어 회의 참여 <br><Br>
+                        ◆ 담당 브랜드 : <Br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- 삼성에버랜드 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- LG유플러스 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- 한국야쿠르트
                     </p>
                 </div>
             </div>
@@ -421,26 +441,106 @@
     --------------------------------------------------
     -->
     <section class="education-section section-gap" id="Education">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                    <div class="education-block">
-                        <h3>쌍용교육센터</h3>
-                        <span class="education-date">2019.01.28. - 2019.08.22</span>
-                        <h4>Java & Python 기반 응용SW 개발자 양성과정</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-block">
+                <h3>쌍용교육센터 - 수료</h3>
+                <span class="education-date">2019.01.28. - 2019.08.22</span>
+                <h4>Java & Python 기반 응용SW 개발자 양성과정</h4>
+                <h4>◆ 훈련과목</h4>
+                <div class="subject subject-sist">
+                    <ul>
+                        <li>정보능력</li>
+                        <li>객체지향 프로그래밍</li>
+                        <li>관계형 데이터베이스</li>
+                    </ul>
+                </div>
+                <div class="subject subject-sist">
+                    <ul>
+                        <li>웹 클라이언트 프로그래밍</li>
+                        <li>웹 서버 프로그래밍</li>
+                        <li>실무 프로젝트 통합구현</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-block">
+                <h3>한림대학교 - 공학사 & 문학사</h3>
+                <span class="education-date">2013.03.01 - 2017.02.22.</span>
+                <h4>복수전공 컴퓨터공학과 & 주전공 광고홍보학과</h4>
+                <div id="subject-hallym-container">
+                    <div class="subject subject-hallym"><h4>◆ 컴퓨터공학</h4>
+                        <ul>
+                            <li>유헬스프로그래밍Ⅰ</li>
+                            <li>유헬스프로그래밍Ⅱ</li>
+                            <li>C프로그래밍Ⅰ</li>
+                            <li>C프로그래밍Ⅱ</li>
+                            <li>컴퓨터네트워크(영)</li>
+                            <li>영상처리프로그래밍</li>
+                            <li>자료구조(영)</li>
+                            <li>운영체제</li>
+                            <li>웹프로그래밍</li>
+                            <li>논리설계및실험</li>
+                            <li>종합설계프로젝트</li>
+                            <li>유헬스데이터베이스</li>
+                            <li>윈도우프로그래밍</li>
+                            <li>알고리즘개론(영)</li>
+                            <li>컴퓨터구조</li>
+                        </ul>
                     </div>
 
-                    <div class="education-block">
-                        <h3>한림대학교(학사)</h3>
-                        <span class="education-date">2013.03.01 - 2017.02.22.</span>
-                        <h4>(복수전공)컴퓨터공학과, (주전공)광고홍보학과</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
+                    <div class="subject subject-hallym"><h4>◆ 광고홍보학</h4>
+                        <ul>
+                            <li>커뮤니케이션이론</li>
+                            <li>International Communication(영)</li>
+                            <li>멀티미디어제작기초</li>
+                            <li>브랜드관리론</li>
+                            <li>마케팅이론</li>
+                            <li>광고와사회</li>
+                            <li>그래픽커뮤니케이션</li>
+                            <li>광고개론</li>
+                            <li>홍보개론</li>
+                            <li>Consumer Behavior(영)</li>
+                            <li>크리에이티브원론</li>
+                            <li>캡스톤디자인-IMC캠페인</li>
+                            <li>IAA조사방법론</li>
+                            <li>인터액티브미디어</li>
+                            <li>직접반응마케팅</li>
+                            <li>매체계획론</li>
+                            <li>국제마케팅커뮤니케이션특강</li>
+                            <li>졸업논문및현장실습</li>
+                            <li>LOHAS광고기획론</li>
+                        </ul>
                     </div>
+
+                    <div class="subject subject-hallym"><h4>◆ 교양</h4>
+                        <ul>
+                            <li>컴퓨터-프리젠테이션</li>
+                            <li>컴퓨터-스프레드시트</li>
+                            <li>생활속의컴퓨터</li>
+                            <li>U시대의네티즌</li>
+                            <li>생활영어3(영)</li>
+                            <li>생활영어4(영)</li>
+                            <li>스크린영어</li>
+                            <li>영어독해1</li>
+                            <li>영어1(영)</li>
+                            <li>중국어1</li>
+                            <li>교육학의이해</li>
+                            <li>연극의이해</li>
+                            <li>철학의이해</li>
+                            <li>생활한문</li>
+                            <li>사고와표현</li>
+                            <li>신입생세미나</li>
+                            <li>스포츠-댄스스포츠</li>
+                            <li>진로와직업선택</li>
+                            <li>취업과진로1</li>
+                            <li>단기인턴쉽Ⅰ</li>
+                            <li>산학현장실습3</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
 
     <!--
@@ -452,7 +552,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="font-black">
+                    <div class="font-white">
                         <h2 class="section-title">Contact Me</h2>
                     </div>
                 </div>
