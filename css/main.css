@@ -3,13 +3,21 @@
     작성자 : CHANMI KIM
     파일명 : main.css
     작성일자 : 2019.05.30.
-    최근 수정날짜 : 2019.06.15.
+    최근 수정날짜 : 2019.06.16.
     프로그램명 : CHANMI KIM's Portfolio
     상세설명 : 포트폴리오 사이트에 들어가는 CSS 입니다.
             index.html 파일에 들어가는 css를 다루고 있습니다.
 
 */
 
+/*
+주요색상
+밝은회색 : #F2F0F2
+암갈색 : #BF8773
+흑갈색 : #593D36
+연한 분홍 : #F2CBC2
+진한 분홍 : #D98B8B
+*/
 
 /*
 ==================================================
@@ -105,11 +113,11 @@
 }
 
 #name-header {
-    color: cornflowerblue;
+    color: #1473E6;
 }
 
 #name-header:hover {
-    color: tomato;
+    color: #F2CBC2;
 }
 
 @media (max-width: 768px) {
@@ -240,7 +248,7 @@
 }
   
 .nav-menu li a:hover{
-    color: tomato !important;
+    color: #F2CBC2 !important;
     text-decoration: none !important;
 }
   
@@ -511,26 +519,26 @@ body.mobile-nav-active {
 }
 
 /* 섹션별 타이틀 */
+
+
 .section-title {
     margin-bottom: 80px;
+    position:relative;
+    display:inline-block;
+    font-size:3em;
+    font-weight: bold;
+    margin:0 0 30px 0;
+    text-shadow: 1px 1px 4px gray; 
+}
+@media (max-width: 1024px) {
+    .section-title {
+      font-size: 30px;
+    }
 }
 
 @media (max-width: 673px) {
     .section-title {
       margin-bottom: 30px;
-    }
-}
-
-.section-title {
-    position:relative;
-    display:inline-block;
-    font-size:3em;
-    font-weight:400;
-    margin:0 0 30px 0
-}
-@media (max-width: 1024px) {
-    .section-title {
-      font-size: 30px;
     }
 }
 
@@ -579,7 +587,7 @@ body.mobile-nav-active {
 */
 
 .experience-section {
-    background:#f2f2f5
+    background:#F2F0F2;
 }
 
 #experience-timeline{
@@ -737,7 +745,7 @@ body.mobile-nav-active {
 .single-project .thumb .overlay-bg {
     border: 1px solid black;
     /* background: rgb(32, 46, 109); */
-    background: linear-gradient(5deg, #d474b0, #64c6df);
+    background: linear-gradient(5deg, #D98B8B, cornflowerblue);
     opacity: 0;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease 0s;
@@ -806,17 +814,23 @@ body.mobile-nav-active {
 
 /* 각 파트 상자 색상 */
 .skills-section .col-lg-3.col-md-6:nth-child(1) .skills-part {
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(89, 61, 54, 0.5);
 }
 .skills-section .col-lg-3.col-md-6:nth-child(2) .skills-part {
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(242, 203, 194, 0.5);
 }
 .skills-section .col-lg-3.col-md-6:nth-child(3) .skills-part {
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(89, 61, 54, 0.5);
 }
 .skills-section .col-lg-3.col-md-6:nth-child(4) .skills-part {
-    background: rgba(255, 255, 255, 0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(242, 203, 194, 0.5);
 }
+
+
 
 .skills-part {
     /* color: #fff; */
@@ -920,7 +934,19 @@ body.mobile-nav-active {
     padding: 15px;
     border: 1px solid #dcd9d9;
     text-align: left;
+    overflow: hidden;
 }
+
+.subject {
+    float: left; 
+    padding: 10px; 
+}
+
+.education-block .subject-sist{ width: 50%; }
+
+.education-block .subject-hallym:first-child { width: 30%; }
+.education-block .subject-hallym:nth-child(2){ width: 40%; }
+.education-block .subject-hallym:last-child{ width:30%; }
 
 .education-block h3 {
     font-weight: 500;
@@ -969,8 +995,9 @@ body.mobile-nav-active {
 /* Contact 큰 상자 색상 */
 .contact-area {
     /* background: linear-gradient(45deg, #ffd3d3, #bba8ff, navy); */
+    background: linear-gradient(55deg, #355C7D, #6C5B7B, #C06C84);
     /* background: rgb(32, 46, 109); */
-    background: #bba8ff;
+    /* background: #bba8ff; */
   }
   @media (max-width: 1024px) {
     .contact-area .row.mt-80 {
@@ -980,7 +1007,7 @@ body.mobile-nav-active {
 
 #Contact .container h2 {
     margin-bottom: 50px;
-    color: black;
+    /* color: black; */
     text-align: center;
     width: 100%;
 }
@@ -1057,7 +1084,7 @@ body.mobile-nav-active {
 }
 
 .footer-area .footer-social a:hover{
-    color: tomato;
+    color: #1473E6;
 }
 
 .footer-area .footer-social a i {
@@ -1072,12 +1099,6 @@ body.mobile-nav-active {
       font-size: 25px;
     }
 }
-
-.footer-area .footer-social a i:hover {
-    color: #e45447 !important;
-}
-
-
 
 /* 저작권 표시 */
 .footer-area .container .copyright{
