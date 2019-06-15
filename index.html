@@ -27,16 +27,7 @@
     <script src="js/bootstrap.js"></script>
     <script defer src="fontawesome-free-5.9.0-web/js/all.min.js"></script>
     <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=9cf6ff993e4d8f63debde2985a96a5fe"></script>
-    <!-- <script src="js/main.js"></script> -->
-    <script>
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new daum.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표 : 위도, 경도
-            level: 3 //지도의 레벨(확대, 축소 정도)
-        };
-
-        var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
-    </script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- CHANMI KIM's Portfolio : index.html -->
@@ -92,7 +83,7 @@
                     <h1 class="banner-title"><span>CHANMI KIM</span>'s<br>
                         portfolio</h1>
                     <div class="banner-subtitle">
-                        App/Web Developer
+                        APP/WEB Developer
                     </div>
                 </div>
             </div>
@@ -136,23 +127,31 @@
     <section class="experience-section section-gap" id="Experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
-            <div id="experience-timeline">
+            <div id="experience-timeline" class="row">
 
                 <!-- Company2 -->
-                <div id="map" style="width:500px;height:400px;"></div>
-                <div data-date="2017.07.17. – 2018.07.16." id="experience-description">
-                    <h3>웹젠</h3>
-                    <h4>사업PM</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                    </p>
+                <div class="map col-md-4" style="width: 400px;">
+                    <div id="map" style="width: 40%;height:250px;"></div>
                 </div>
+                <div class="col-md-6">
+                    <div id="experience-description">
+                        <h3>웹젠</h3>
+                        <span class="experience-date">2017.07.17 - 2018.07.16.</span>
+                        <h4>사업PM - 사원</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                        </p>
+                    </div>
+                 </div>
 
                 <!-- Company1-->
-                <!-- <div id="map" style="width:500px;height:400px;"></div> -->
-                <div data-date="2016.06.27. – 2016.08.19.">
+                <div class="map col-md-4" style="width: 400px;">
+                    <div id="map" style="width: 40%;height:250px;"></div>
+                </div>
+                <div class="col-md-6">
                     <h3>비욘드마케팅그룹</h3>
-                    <h4>광고기획(AE)</h4>
+                    <span class="experience-date">2016.06.27 - 2016.08.19.</span>
+                    <h4>광고기획(AE) - 인턴</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
                     </p>
@@ -426,7 +425,7 @@
                 <h2 class="section-title">Education</h2>
                     <div class="education-block">
                         <h3>쌍용교육센터</h3>
-                        <span class="education-date">2019.01.28. - 2019.08.23</span>
+                        <span class="education-date">2019.01.28. - 2019.08.22</span>
                         <h4>Java & Python 기반 응용SW 개발자 양성과정</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
