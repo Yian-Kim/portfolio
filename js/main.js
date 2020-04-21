@@ -32,8 +32,21 @@ $(document).ready(function(){
 ==================================================
 */
 
+/* 네오위즈 지도 추가 */
+
+var map_neowiz = new naver.maps.Map('map-neowiz', {
+    center: new naver.maps.LatLng(37.400327, 127.104365),
+    zoom: 10
+});
+
+// 지도 위에 마커 추가
+var marker_neowiz = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.400327, 127.104365),
+    map: map_neowiz
+});
+
 /* 웹젠 지도 추가 */
-// 네이버 지도 삽입
+
 var map_webzen = new naver.maps.Map('map-webzen', {
     center: new naver.maps.LatLng(37.402531, 127.101574),
     zoom: 10
