@@ -1,12 +1,16 @@
 # CHANMI KIM's Portfolio
 
-**김찬미의 포트폴리오**
+**김찬미의 포트폴리오 | [▶ Preview](https://chanmi-kim.github.io/portfolio)** 
+
+![CHANMI KIM's Portfolio - Home](https://bit.ly/2Kp2g1i "CHANMI KIM's Portfolio Preview")
+
+### 👋 Introduction
 
 <table>
     <tr>
         <th>프로젝트명</th>
         <th>CHANMI KIM's Portfolio</th>
-        <th>개발기간</th>
+        <th>개발 기간</th>
         <th>2019.05.30. ~ 2019.06.16.</th>
     </tr>
     <tr>
@@ -33,6 +37,30 @@
     </tr>
 </table>
 
-### Here's Link
+### 📷 Screen Shot
 
-- [CHANMI KIM's Portfolio - https://bit.ly/34RDqR6](https://chanmi-kim.github.io/portfolio)
+CHANMI KIM's Portfolio is implemented in pure HTML5, CSS3, JavaScript. (CHANMI-SIMPLE-THEME)
+
+<table>
+    <tr>
+        <th>About</th>
+        <th>Experience</th>
+        <th>Project</th>
+    </tr>
+    <tr>
+        <td><img width="266" src="https://bit.ly/3bt961L"></td>
+        <td><img width="266" src="https://bit.ly/3eIbofp"></td>
+        <td><img width="266" src="https://bit.ly/3apO96K"></td>
+    </tr>
+        <tr>
+        <th>Skills</th>
+        <th>Eduction</th>
+        <th>Contact</th>
+    </tr>
+    <tr>
+        <td><img width="266" src="https://bit.ly/2KkH7VZ"></td>
+        <td><img width="266" src="https://bit.ly/2KsGfP7"></td>
+        <td><img width="266" src="https://bit.ly/3cEMThE"></td>
+    </tr>
+</table>
+
