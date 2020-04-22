@@ -37,7 +37,7 @@
     </tr>
 </table>
 
-### 📷 Screen Shot
+### 📷 Appearance
 
 <table>
     <tr>
