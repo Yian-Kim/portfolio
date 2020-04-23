@@ -9,7 +9,7 @@
 <table>
     <tr>
         <th>프로젝트명</th>
-        <th>CHANMI KIM's Portfolio</th>
+        <th>Portfolio</th>
         <th>개발 기간</th>
         <th>2019.05.30. ~ 2019.06.14. <br>(일 4시간, 총 12일)</th>
     </tr>
