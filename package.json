@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,7 +12,6 @@
     "deploy": "npm run build && npm run export && npm run create-nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
