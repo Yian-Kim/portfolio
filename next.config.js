@@ -3,9 +3,9 @@ const nextConfig = {
   output: 'export',
   basePath: '/portfolio',
   assetPrefix: '/portfolio/',
-  experimental: {
-    // appDir: true,
-  },
+  images: {
+    unoptimized: true,
+  }
 }
 
 module.exports = nextConfig

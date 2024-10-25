@@ -9,7 +9,7 @@ const projects = [
     name: "Portfolio 2019",
     description:
       "Single-page portfolio static website with HTML5, CSS3, JavaScript.",
-    image: "/images/Project/portfolio-thumbnail.png",
+    image: "./images/Project/portfolio-thumbnail.png",
     github: "https://github.com/Yian-Kim/portfolio/tree/2019",
     link: "https://github.com/Yian-Kim/portfolio/blob/2019/README.md",
   },
@@ -17,7 +17,7 @@ const projects = [
     name: "Tramap Basket",
     description:
       "A free travel agency site that packs servlets and JSP-based baskets.",
-    image: "/images/Project/tramap-basket-thumbnail.png",
+    image: "./images/Project/tramap-basket-thumbnail.png",
     github: "https://github.com/Yian-Kim/tramap-basket",
     link: "https://github.com/Yian-Kim/Tramap-Basket/blob/master/README.md",
   },
@@ -25,7 +25,7 @@ const projects = [
     name: "SEDU Center",
     description:
       "SW Education Center Operation Program Based on Relational Database.",
-    image: "/images/Project/sedu-center-thumbnail.png",
+    image: "./images/Project/sedu-center-thumbnail.png",
     github: "https://github.com/Yian-Kim/sedu-center-thumbnail",
     link: "https://github.com/Yian-Kim/SEDU-Center/blob/master/README.md",
   },
@@ -33,7 +33,7 @@ const projects = [
     name: "Jeju Double Dragon Tour",
     description:
       "Jeju Random Matching Travel Schedule Management Program Using Java Collection and File Input/Output.",
-    image: "/images/Project/jeju-double-dragon-tour-thumbnail.png",
+    image: "./images/Project/jeju-double-dragon-tour-thumbnail.png",
     github: "https://github.com/Yian-Kim/jeju-double-dragon-tour",
     link: "https://github.com/Yian-Kim/Jeju-Double-Dragon-Tour/blob/master/README.md",
   }
