@@ -26,7 +26,7 @@ const projects = [
     description:
       "SW Education Center Operation Program Based on Relational Database.",
     image: "./images/Project/sedu-center-thumbnail.png",
-    github: "https://github.com/Yian-Kim/sedu-center-thumbnail",
+    github: "https://github.com/Yian-Kim/sedu-center",
     link: "https://github.com/Yian-Kim/SEDU-Center/blob/main/README.md",
   },
   {
