@@ -77,5 +77,4 @@
 
 ### 📚 References
 
-* Template used: [hqasmei / tailwindcss-and-nextjs-portfolio](hqasmei / tailwindcss-and-nextjs-portfolio
-](https://github.com/hqasmei/tailwindcss-and-nextjs-portfolio)
+* Template used: [hqasmei / tailwindcss-and-nextjs-portfolio](https://github.com/hqasmei/tailwindcss-and-nextjs-portfolio)
