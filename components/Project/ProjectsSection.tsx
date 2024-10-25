@@ -19,7 +19,7 @@ const projects = [
       "A free travel agency site that packs servlets and JSP-based baskets.",
     image: "./images/Project/tramap-basket-thumbnail.png",
     github: "https://github.com/Yian-Kim/tramap-basket",
-    link: "https://github.com/Yian-Kim/Tramap-Basket/blob/master/README.md",
+    link: "https://github.com/Yian-Kim/Tramap-Basket/blob/main/README.md",
   },
   {
     name: "SEDU Center",
@@ -27,7 +27,7 @@ const projects = [
       "SW Education Center Operation Program Based on Relational Database.",
     image: "./images/Project/sedu-center-thumbnail.png",
     github: "https://github.com/Yian-Kim/sedu-center-thumbnail",
-    link: "https://github.com/Yian-Kim/SEDU-Center/blob/master/README.md",
+    link: "https://github.com/Yian-Kim/SEDU-Center/blob/main/README.md",
   },
   {
     name: "Jeju Double Dragon Tour",
@@ -35,7 +35,7 @@ const projects = [
       "Jeju Random Matching Travel Schedule Management Program Using Java Collection and File Input/Output.",
     image: "./images/Project/jeju-double-dragon-tour-thumbnail.png",
     github: "https://github.com/Yian-Kim/jeju-double-dragon-tour",
-    link: "https://github.com/Yian-Kim/Jeju-Double-Dragon-Tour/blob/master/README.md",
+    link: "https://github.com/Yian-Kim/Jeju-Double-Dragon-Tour/blob/main/README.md",
   }
 ]
 
