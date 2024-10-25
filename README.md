@@ -1,8 +1,12 @@
-# CHANMI KIM's Portfolio
+# YIAN KIM's Portfolio
 
-**김찬미의 포트폴리오 | [▶ Preview](https://chanmi-kim.github.io/portfolio)** 
+**[▶ Preview](https://Yian-Kim.github.io/portfolio)**
 
-![CHANMI KIM's Portfolio](asset/img/readme/portfolio-thumbnail.png "Preview")
+> 2019년 이후 2024년 버전으로 새롭게 업데이트 되었습니다.
+
+**김이안의 포트폴리오** 
+
+![YIAN KIM's Portfolio](asset/img/readme/portfolio-thumbnail.png "Preview")
 
 ### 👋 Introduction
 
