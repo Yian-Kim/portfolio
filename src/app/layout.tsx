@@ -1,7 +1,7 @@
 "use client"
-import "../styles/globals.css"
-import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer"
+import "../app/styles/globals.css"
+import Navbar from "../app/components/Navbar"
+import Footer from "../app/components/Footer"
 import { ThemeProvider } from "next-themes"
 
 export default function RootLayout({

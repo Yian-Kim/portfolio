@@ -1,6 +1,6 @@
-import AboutSection from "@/components/About/AboutSection"
-import HomeSection from "@/components/Home/HomeSection"
-import ProjectsSection from "@/components/Project/ProjectsSection"
+import AboutSection from "../app/components/About/AboutSection"
+import HomeSection from "../app/components/Home/HomeSection"
+import ProjectsSection from "../app/components/Project/ProjectsSection"
 
 export default function Home() {
   return (

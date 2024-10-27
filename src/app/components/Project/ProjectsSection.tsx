@@ -3,39 +3,36 @@ import Image from "next/image"
 import Link from "next/link"
 import SlideUp from "../SlideUp"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import { Project } from "../../../config/constants"
 
 const projects = [
   {
-    name: "Portfolio 2019",
-    description:
-      "Single-page portfolio static website with HTML5, CSS3, JavaScript.",
-    image: "./images/Project/portfolio-thumbnail.png",
-    github: "https://github.com/Yian-Kim/portfolio/tree/2019",
-    link: "https://github.com/Yian-Kim/portfolio/blob/2019/README.md",
+    name: Project['04'].name,
+    description: Project['04'].description,
+    image: Project['04'].image,
+    github: Project['04'].github,
+    link: Project['04'].link,
   },
   {
-    name: "Tramap Basket",
-    description:
-      "A free travel agency site that packs servlets and JSP-based baskets.",
-    image: "./images/Project/tramap-basket-thumbnail.png",
-    github: "https://github.com/Yian-Kim/tramap-basket",
-    link: "https://github.com/Yian-Kim/Tramap-Basket/blob/main/README.md",
+    name: Project['03'].name,
+    description: Project['03'].description,
+    image: Project['03'].image,
+    github: Project['03'].github,
+    link: Project['03'].link,
   },
   {
-    name: "SEDU Center",
-    description:
-      "SW Education Center Operation Program Based on Relational Database.",
-    image: "./images/Project/sedu-center-thumbnail.png",
-    github: "https://github.com/Yian-Kim/sedu-center",
-    link: "https://github.com/Yian-Kim/SEDU-Center/blob/main/README.md",
+    name: Project['02'].name,
+    description: Project['02'].description,
+    image: Project['02'].image,
+    github: Project['02'].github,
+    link: Project['02'].link,
   },
   {
-    name: "Jeju Double Dragon Tour",
-    description:
-      "Jeju Random Matching Travel Schedule Management Program Using Java Collection and File Input/Output.",
-    image: "./images/Project/jeju-double-dragon-tour-thumbnail.png",
-    github: "https://github.com/Yian-Kim/jeju-double-dragon-tour",
-    link: "https://github.com/Yian-Kim/Jeju-Double-Dragon-Tour/blob/main/README.md",
+    name: Project['01'].name,
+    description: Project['01'].description,
+    image: Project['01'].image,
+    github: Project['01'].github,
+    link: Project['01'].link,
   }
 ]
 
@@ -70,12 +67,14 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                      {project.github ? (
+                        <Link href={project.github} target="_blank">
+                          <BsGithub
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      ) : null}
                       {project.link ? (
                         <Link href={project.link} target="_blank">
                           <BsArrowUpRightSquare
