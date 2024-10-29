@@ -2,9 +2,9 @@
 
 **🌏[English(영어)](README.md) | [Korean(한국어)](README-ko.md)**
 
-**Yian Kim's Portfolio | [▶ Preview](https://Yian-Kim.github.io/portfolio)** 
+**Yian Kim's Portfolio | [▶ Preview](https://Yian-Kim.github.io/portfolio)**
 
-![YIAN KIM's Portfolio](asset/img/readme/portfolio-thumbnail.png "Preview")
+![YIAN KIM's Portfolio](asset/img/readme/portfolio-thumbnail.png 'Preview')
 
 ### 📑 Project Summary
 
@@ -50,14 +50,14 @@
 
 ### 📜 Project Description
 
-* This single-page portfolio website utilizes Next.js and TypeScript, styled with Tailwind CSS.
-* This project aims to effectively showcase development skills and projects.
+- This single-page portfolio website utilizes Next.js and TypeScript, styled with Tailwind CSS.
+- This project aims to effectively showcase development skills and projects.
 
 ### 🛠️ Tech Stack
 
-* Languages: TypeScript, JavaScript
-* Frameworks: Next.js (v13), React.js
-* Styling: Tailwind CSS
+- Languages: TypeScript, JavaScript
+- Frameworks: Next.js (v13), React.js
+- Styling: Tailwind CSS
 
 ### ⚙️ Installation
 
@@ -69,12 +69,12 @@
 
 ### 🚀 Usage
 
-* Access the portfolio at `localhost:3000` in your Chrome browser.
+- Access the portfolio at `localhost:3000` in your Chrome browser.
 
 ### 🤝 Contribution
 
-* If you'd like to contribute, please create an issue in the Issues tab or submit a pull request.
+- If you'd like to contribute, please create an issue in the Issues tab or submit a pull request.
 
 ### 📚 References
 
-* Template used: [hqasmei / tailwindcss-and-nextjs-portfolio](https://github.com/hqasmei/tailwindcss-and-nextjs-portfolio)
+- Template used: [hqasmei / tailwindcss-and-nextjs-portfolio](https://github.com/hqasmei/tailwindcss-and-nextjs-portfolio)

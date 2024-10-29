@@ -6,7 +6,7 @@ const nextConfig = {
   output: isProd ? 'export' : 'standalone',
   images: {
     unoptimized: true,
-  }
-}
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
