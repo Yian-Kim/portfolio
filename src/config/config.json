@@ -1,41 +1,234 @@
 {
-    "author": "Yian Kim",
-    "socialMedia": {
-        "GITHUB_USER": "Yian-Kim",
-        "LINKEDIN_USER": "yiankim",
-        "TISTORY_USER": "yian",
-        "DEV_COMMUNITY_USER": "yian",
-        "THREADS_USER": "@yiankim_",
-        "TWITTER_USER": "devyiankim"
+  "author": "Yian Kim",
+  "socialMedia": {
+    "GITHUB_USER": "Yian-Kim",
+    "LINKEDIN_USER": "yiankim",
+    "TISTORY_USER": "yian",
+    "DEV_COMMUNITY_USER": "yian",
+    "THREADS_USER": "@yiankim_",
+    "TWITTER_USER": "devyiankim"
+  },
+  "experiences": [
+    {
+      "company": "TOURHARA",
+      "period": "2024.06 ~ Present",
+      "position": "Software Engineer (Full Stack Developer)",
+      "description": "AtHomeTrip is a travel platform that redefines the travel experience, offering authentic relaxation and exploration in a variety of properties around the world. Through technological innovation, we help our customers plan and enjoy their trips seamlessly and provide sensational services that connect them with a global community.",
+      "logo": "./images/Experience/athometrip.ico",
+      "url": "https://athometrip.com/en/",
+      "techStack": [
+        "TypeScript",
+        "Node.js",
+        "NextJS",
+        "Next.js",
+        "React.js",
+        "MySQL",
+        "TypeROM",
+        "QueryRunner",
+        "Git",
+        "GitHub",
+        "Jira"
+      ],
+      "achievements": {
+        "name": "Admin System",
+        "details": [
+          "Developed administrative tools for clients to streamline their internal employee business travel arrangements.",
+          "Built backend servers utilizing Nest.js, Node.js, TypeScript to ensure efficient data handling and robust API integration",
+          "Created dynamic user interfaces with React.js and Next.js, enhancing user experience and reducing page load times by 30%.",
+          "Utilized collaboration and productivity tools such as Jira, Slack, and Notion to effectively manage work history, improving team communication and project tracking.",
+          "Facilitated collaboration through version control system, ensuring code integrity and streamlining team workflows."
+        ]
+      }
     },
-    "project": [
+    {
+      "company": "LINE GAMES",
+      "period": "2020.06 ~ 2022.08",
+      "position": "Software Engineer (Backend Developer)",
+      "description": "LINE Games is a gaming platform that connects with global players through sensational and diverse games. We provide fun with exciting and challenging game content and aim to create special experiences through games with creative challenges and technology.",
+      "logo": "./images/Experience/line-games.ico",
+      "url": "https://www.line.games/en/",
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "JSP",
+        "Ajax",
+        "Redis",
+        "AWS",
+        "Jenkins",
+        "MySQL",
+        "MyBatis",
+        "GitLab",
+        "Jira",
+        "Confluence"
+      ],
+      "achievements": [
         {
-            "name": "Jeju Double Dragon Tour",
-            "description": "Jeju Random Matching Travel Schedule Management Program Using Java Collection and File Input/Output.",
-            "image": "./images/Project/jeju-double-dragon-tour-thumbnail.png",
-            "github": "https://github.com/Yian-Kim/jeju-double-dragon-tour",
-            "link": "https://github.com/Yian-Kim/Jeju-Double-Dragon-Tour/blob/main/README.md"
+          "name": "Personal Information Management System",
+          "details": [
+            "Developed and maintained access control system managing permissions for 200+ users across multiple service platforms, improving security compliance by 40%.",
+            "Implemented customer service management portal using Java/Spring Boot, reducing request processing time by 10%.",
+            "Designed MySQL database architecture and executed migration plans, improving query performance by 20%."
+          ]
         },
         {
-            "name": "SEDU Center",
-            "description": "SW Education Center Operation Program Based on Relational Database.",
-            "image": "./images/Project/sedu-center-thumbnail.png",
-            "github": "https://github.com/Yian-Kim/sedu-center",
-            "link": "https://github.com/Yian-Kim/SEDU-Center/blob/main/README.md"
+          "name": "FLOOR Customer Service Platform",
+          "details": [
+            "Built multi-channel customer service platform supporting 10+ concurrent requests, improving response efficiency by 40%.",
+            "Built RESTful APIs for internal service integration, handling 4,000+ weekly requests with 99.5% uptime.",
+            "Implemented custom management features for various game titles, reducing configuration effort by 30%."
+          ]
         },
         {
-            "name": "Tramap Basket",
-            "description": "A free travel agency site that packs servlets and JSP-based baskets.",
-            "image": "./images/Project/tramap-basket-thumbnail.png",
-            "github": "https://github.com/Yian-Kim/tramap-basket",
-            "link": "https://github.com/Yian-Kim/Tramap-Basket/blob/main/README.md"
+          "name": "Employee Management System",
+          "details": [
+            "Enhanced approval workflow system, reducing approval processing time from 10 minutes to 3 minutes.",
+            "Improved approval request validation process, reducing manual review time by 20%.",
+            "Resolved over 50 maintenance requests in collaboration with infrastructure team, maintaining 99% system availability."
+          ]
         },
         {
-            "name": "Portfolio 2019",
-            "description": "Single-page portfolio static website with HTML5, CSS3, JavaScript.",
-            "image": "./images/Project/portfolio-thumbnail.png",
-            "github": "https://github.com/Yian-Kim/portfolio/tree/2019",
-            "link": "https://github.com/Yian-Kim/portfolio/blob/2019/README.md"
+          "name": "Office Seating Management System",
+          "details": [
+            "Architected and deployed AWS-based seating management system supporting 200+ employees.",
+            "Integrated Spring Security for user authentication and authorization, ensuring secure access control.",
+            "Developed admin dashboard using React and REST APIs, improving seat management efficiency by 30%."
+          ]
+        },
+        {
+          "name": "LINE Games Portal Admin System",
+          "details": [
+            "Developed game version control system to manage 10+ games across multiple platforms.",
+            "Built authentication token API that handles 100,000+ daily requests with 99.5% uptime.",
+            "Integrated front-end components with back-end services using jQuery, improving workflow efficiency by 20%."
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "company": "NEOWIZ",
+      "period": "2020.01 ~ 2020.04",
+      "position": "Software Engineer (Backend Developer) - Intern",
+      "description": "Neowiz is a global entertainment company that leads trends in the gaming industry, providing original and innovative game content. We are constantly challenging new possibilities and strive to bring the best immersive experience and enjoyment to our players.",
+      "logo": "./images/Experience/neowiz.ico",
+      "url": "https://www.neowiz.com/",
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "Pebble",
+        "Ajax",
+        "MySQL",
+        "MyBatis",
+        "GitLab",
+        "Jira",
+        "Confluence"
+      ],
+      "achievements": [
+        {
+          "name": "Internship",
+          "details": [
+            "Supported development for the centralized gaming platform service to optimize content distribution.",
+            "Completed bulletin board application project utilizing Spring Boot, Java, and Pebble.",
+            "Improved database efficiency and integrity for internal game management systems through reorganization of databases and table normalization"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "WEBZEN",
+      "period": "2017.07 ~ 2018.08",
+      "position": "Business Project Manager (PM)",
+      "description": "WEBZEN is a global gaming company that pioneers innovation in online gaming, offering a range of immersive and action-packed MMORPGs. With popular titles such as MU Online and R2, WEBZEN is dedicated to delivering high-quality gaming experiences that captivate players around the world.",
+      "logo": "./images/Experience/webzen.ico",
+      "url": "https://www.webzen.co.kr/",
+      "techStack": ["Jira", "Redmine", "PowerPoint", "Excel", "Word"],
+      "achievements": [
+        {
+          "name": "App MarketPlace Manager",
+          "details": [
+            "Managed the Google Play Console and iTunes Connect, iOS certificate issuance, and in-app code generation.",
+            "Facilitated reviews for market policy management and conducted build reviews to uphold platform compliance.",
+            "Created and distributed new market management guidelines to revamp processes across teams."
+          ]
+        },
+        {
+          "name": "POOL TIME",
+          "details": [
+            "Contributed to the soft launch of the global mobile 8 ball billiards game PoolTime.",
+            "Analyzed game metric statistics to inform strategic decision-making.",
+            "Planned and executed in-game content and promotions on Facebook to enhance user engagement and drive participation."
+          ]
+        },
+        {
+          "name": "SOGWC",
+          "details": [
+            "Contributed to the global launch of the golf game SOGWC.",
+            "Analyzed worldwide user trends across different communities to effectively tailor marketing strategies.",
+            "Managed the operation of the Billing System service to ensure seamless transaction processes."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Beyond Marketing Group",
+      "period": "2016.06 ~ 2016.08",
+      "position": "Account Executivee (AE) – Intern",
+      "description": "Beyond Marketing is a marketing specialist that proposes innovative marketing solutions to realize clients' visions. With a data-driven, strategic approach and creative ideas, we deliver value beyond client expectations and help brands grow.",
+      "logo": "./images/Experience/beyond-marketing-group.ico",
+      "url": "https://beyondmarketing.co.kr/",
+      "techStack": ["HTML", "PowerPoint", "Excel", "Word"],
+      "achievements": [
+        {
+          "name": "Samsung Everland",
+          "details": [
+            "Planned and executed a viral MCN video campaign for the Everland Summer Festival at Cheil Worldwide.",
+            "Managed viral blog content for the Everland Music Garden, successfully enhancing brand and driving traffic to the event."
+          ]
+        },
+        {
+          "name": "LG Uplus",
+          "details": [
+            "Authored brand awareness campaigns and strategic viral articles online for LG Uplus IDC.",
+            "Developed webtoon content proposals for LG Uplus Home Services to creatively illustrate their benefits and features."
+          ]
+        },
+        {
+          "name": "Korea Yakult",
+          "details": [
+            "Proposed innovative and successful campaign strategies for Korea Yakult's \"Daily Vegetable\" and \"Cold Brew\" products.",
+            "Compiled trend reports to inform project strategies, ensuring alignment with market dynamics and consumer interests."
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Jeju Double Dragon Tour",
+      "description": "Jeju Random Matching Travel Schedule Management Program Using Java Collection and File Input/Output.",
+      "image": "./images/Project/jeju-double-dragon-tour-thumbnail.png",
+      "github": "https://github.com/Yian-Kim/jeju-double-dragon-tour",
+      "link": "https://github.com/Yian-Kim/Jeju-Double-Dragon-Tour/blob/main/README.md"
+    },
+    {
+      "name": "SEDU Center",
+      "description": "SW Education Center Operation Program Based on Relational Database.",
+      "image": "./images/Project/sedu-center-thumbnail.png",
+      "github": "https://github.com/Yian-Kim/sedu-center",
+      "link": "https://github.com/Yian-Kim/SEDU-Center/blob/main/README.md"
+    },
+    {
+      "name": "Tramap Basket",
+      "description": "A free travel agency site that packs servlets and JSP-based baskets.",
+      "image": "./images/Project/tramap-basket-thumbnail.png",
+      "github": "https://github.com/Yian-Kim/tramap-basket",
+      "link": "https://github.com/Yian-Kim/Tramap-Basket/blob/main/README.md"
+    },
+    {
+      "name": "Portfolio 2019",
+      "description": "Single-page portfolio static website with HTML5, CSS3, JavaScript.",
+      "image": "./images/Project/portfolio-thumbnail.png",
+      "github": "https://github.com/Yian-Kim/portfolio/tree/2019",
+      "link": "https://github.com/Yian-Kim/portfolio/blob/2019/README.md"
+    }
+  ]
 }
