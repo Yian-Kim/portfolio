@@ -2,6 +2,8 @@ import config from '../config/config.json';
 import type { ExperienceType } from '../app/components/Experience/experience.d';
 
 export const Author = config.author;
+export const EmailAddressID = config.emailAddress;
+export const EmailAddressForMailTo = `mailto:${EmailAddressID}@gmail.com`;
 
 export const SocialMedia = {
   GITHUB_URL: `https://github.com/${config.socialMedia.GITHUB_USER}`,

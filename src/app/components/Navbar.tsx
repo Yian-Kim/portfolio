@@ -23,10 +23,6 @@ const NAV_ITEMS: Array<NavItem> = [
     page: 'about',
   },
   // {
-  //   label: "CV",
-  //   page: "cv",
-  // },
-  // {
   //   label: "Education",
   //   page: "education",
   // },
@@ -46,10 +42,10 @@ const NAV_ITEMS: Array<NavItem> = [
   //   label: "Activity",
   //   page: "activity",
   // },
-  // {
-  //   label: "Contact",
-  //   page: "contact",
-  // }
+  {
+    label: 'Contact',
+    page: 'contact',
+  },
 ];
 
 export default function Navbar() {

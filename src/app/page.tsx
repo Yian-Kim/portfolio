@@ -2,6 +2,7 @@ import HomeSection from '../app/components/Home/HomeSection';
 import AboutSection from '../app/components/About/AboutSection';
 import ExperienceSection from '../app/components/Experience';
 import ProjectSection from '../app/components/Project/ProjectSection';
+import ContactSection from '../app/components/Contact/ContactSection';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AboutSection />
       <ExperienceSection />
       <ProjectSection />
+      <ContactSection />
     </main>
   );
 }

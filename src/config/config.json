@@ -1,5 +1,6 @@
 {
   "author": "Yian Kim",
+  "emailAddress": "devyiankim",
   "socialMedia": {
     "GITHUB_USER": "Yian-Kim",
     "LINKEDIN_USER": "yiankim",
@@ -229,6 +230,36 @@
       "image": "./images/Project/portfolio-thumbnail.png",
       "github": "https://github.com/Yian-Kim/portfolio/tree/2019",
       "link": "https://github.com/Yian-Kim/portfolio/blob/2019/README.md"
+    }
+  ],
+  "Contact": [
+    {
+      "src": "/images/Contact/20231012113659107001092.jpg",
+      "alt": "그랜드 캐니언"
+    },
+    {
+      "src": "/images/Contact/20231012111535247001031.jpg",
+      "alt": "엔텔롭 캐니언"
+    },
+    {
+      "src": "/images/Contact/20231012111524046001056.jpg",
+      "alt": "브라이스 캐니언"
+    },
+    {
+      "src": "/images/Contact/20231012103713893001083.jpg",
+      "alt": "라스베가스"
+    },
+    {
+      "src": "/imgaes/Contact/20231012103623677001018.jpg",
+      "alt": "홀슈스밴드"
+    },
+    {
+      "src": "/imgaes/Contact/20231012012357599001022.jpg",
+      "alt": "라스베가스"
+    },
+    {
+      "src": "/images/Contact/20231012090640885001005.jpg",
+      "alt": "비행기"
     }
   ]
 }

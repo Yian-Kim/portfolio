@@ -29,17 +29,30 @@ const HomeSection = () => {
             based in South Korea. Working towards creating software that makes
             life easier and more meaningful.
           </p>
-          <Link
-            to='projects'
-            className='text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700'
-            activeClass='active'
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link>
+          <div className='flex gap-4'>
+            <Link
+              to='project'
+              className='text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Project
+            </Link>
+            <Link
+              to='contact'
+              className='text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
       <div className='flex flex-row items-center text-center justify-center '>
