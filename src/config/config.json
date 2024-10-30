@@ -14,7 +14,7 @@
       "company": "TOURHARA",
       "period": "2024.06 ~ Present",
       "position": "Software Engineer (Full Stack Developer)",
-      "description": "AtHomeTrip is a New York-based travel technology startup, comparable to Expedia and Booking.com. As one of the fastest growing creative global online travel agencies (OTAs), the company leverages a state-of-the-art IT infrastructure to deliver innovative travel solutions globally. Tourhara is AtHomeTrip's South Korean subsidiary/regional office. The company currently employs 50 professionals across its international offices, including headquarters and regional offices.",
+      "description": "AtHomeTrip is a New York-based travel technology startup, comparable to Expedia and Booking.com. As one of the fastest growing creative global online travel agencies (OTAs), the company leverages a state-of-the-art IT infrastructure to deliver innovative travel solutions globally. Tourhara is AtHomeTrip's South Korean subsidiary/regional office. The company currently employs 30 professionals across its international offices, including headquarters and regional offices.",
       "logo": "./images/Experience/athometrip.ico",
       "url": "https://athometrip.com/en/",
       "techStack": [
@@ -34,7 +34,7 @@
         "name": "Admin System",
         "details": [
           "Developed administrative tools for clients to streamline their internal employee business travel arrangements.",
-          "Built backend servers utilizing Nest.js, Node.js, TypeScript to ensure efficient data handling and robust API integration",
+          "Built backend servers utilizing Nest.js, Node.js, TypeScript to ensure efficient data handling and robust API integration.",
           "Created dynamic user interfaces with React.js and Next.js, enhancing user experience and reducing page load times by 30%.",
           "Utilized collaboration and productivity tools such as Jira, Slack, and Notion to effectively manage work history, improving team communication and project tracking.",
           "Facilitated collaboration through version control system, ensuring code integrity and streamlining team workflows."
@@ -129,7 +129,7 @@
           "details": [
             "Supported development for the centralized gaming platform service to optimize content distribution.",
             "Completed bulletin board application project utilizing Spring Boot, Java, and Pebble.",
-            "Improved database efficiency and integrity for internal game management systems through reorganization of databases and table normalization"
+            "Improved database efficiency and integrity for internal game management systems through reorganization of databases and table normalization."
           ]
         }
       ]
@@ -235,31 +235,23 @@
   "Contact": [
     {
       "src": "/images/Contact/20231012113659107001092.jpg",
-      "alt": "그랜드 캐니언"
+      "alt": "I visited the Grand Canyon in Phoenix, Arizona (AZ), United States in 2023."
     },
     {
       "src": "/images/Contact/20231012111535247001031.jpg",
-      "alt": "엔텔롭 캐니언"
+      "alt": "I visited Antelope Canyon in Page, Arizona (AZ), United States in 2023."
     },
     {
       "src": "/images/Contact/20231012111524046001056.jpg",
-      "alt": "브라이스 캐니언"
+      "alt": "I visited Bryce Canyon in Bryce, Utah (UT), United States in 2023."
     },
     {
       "src": "/images/Contact/20231012103713893001083.jpg",
-      "alt": "라스베가스"
-    },
-    {
-      "src": "/imgaes/Contact/20231012103623677001018.jpg",
-      "alt": "홀슈스밴드"
-    },
-    {
-      "src": "/imgaes/Contact/20231012012357599001022.jpg",
-      "alt": "라스베가스"
+      "alt": "I visited Las Vegas, Nevada (NV), United States in 2023."
     },
     {
       "src": "/images/Contact/20231012090640885001005.jpg",
-      "alt": "비행기"
+      "alt": "Flights from Incheon (ICN) Airport to San Francisco (SFO) Airport in 2023."
     }
   ]
 }
