@@ -4,7 +4,7 @@
 
 **Yian Kim's Portfolio | [▶ Preview](https://Yian-Kim.github.io/portfolio)**
 
-![YIAN KIM's Portfolio](asset/img/readme/portfolio-thumbnail.png 'Preview')
+![YIAN KIM's Portfolio](public/images/Project/coming-soon-2550190_1280.jpg 'Preview')
 
 ### 📑 Project Summary
 

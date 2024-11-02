@@ -7,18 +7,11 @@ import { Project } from '../../../constants';
 
 const projects = [
   {
-    name: Project['04'].name,
-    description: Project['04'].description,
-    image: Project['04'].image,
-    github: Project['04'].github,
-    link: Project['04'].link,
-  },
-  {
-    name: Project['03'].name,
-    description: Project['03'].description,
-    image: Project['03'].image,
-    github: Project['03'].github,
-    link: Project['03'].link,
+    name: Project['01'].name,
+    description: Project['01'].description,
+    image: Project['01'].image,
+    github: Project['01'].github,
+    link: Project['01'].link,
   },
   {
     name: Project['02'].name,
@@ -28,11 +21,25 @@ const projects = [
     link: Project['02'].link,
   },
   {
-    name: Project['01'].name,
-    description: Project['01'].description,
-    image: Project['01'].image,
-    github: Project['01'].github,
-    link: Project['01'].link,
+    name: Project['03'].name,
+    description: Project['03'].description,
+    image: Project['03'].image,
+    github: Project['03'].github,
+    link: Project['03'].link,
+  },
+  {
+    name: Project['04'].name,
+    description: Project['04'].description,
+    image: Project['04'].image,
+    github: Project['04'].github,
+    link: Project['04'].link,
+  },
+  {
+    name: Project['05'].name,
+    description: Project['05'].description,
+    image: Project['05'].image,
+    github: Project['05'].github,
+    link: Project['05'].link,
   },
 ];
 
